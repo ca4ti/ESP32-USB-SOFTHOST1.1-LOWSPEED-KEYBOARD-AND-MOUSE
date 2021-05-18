@@ -17,6 +17,9 @@ FULL SPEED = 12Mbit/s (not supported yet)
 
 or you can change GPIO > 7 and GPIO < 31, must be INPUT/OUTPUT...
 
+![Image description](https://github.com/nathalis/ESP32-USB-SOFTHOST1.1-LOWSPEED-KEYBOARD-AND-MOUSE/blob/main/ESP32USBHOST/ESP32USBKEYBOARD_Serial_monitor.png)
+
+
 ### future idea:
 
 ...for USB 1.1 full speed soft host solution is needed 12MHz I/O (maybe I2S = max. 20MHz or so... )
