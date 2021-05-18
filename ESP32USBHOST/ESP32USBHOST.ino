@@ -1107,13 +1107,13 @@ static void my_USB_PrintCB(uint8_t usbNum, uint8_t byte_depth, uint8_t* data, ui
     }  
 //--------------------------------------------------------------------------------   
     if (data[3]!=0) { //Z POSITION
-      if ((uint8_t)data[3]>0 && (uint8_t)data[3]<128 ) { // +Y
+      if ((uint8_t)data[3]>0 && (uint8_t)data[3]<128 ) { // +Z
         mouse_Z_POSITION+=(uint8_t)data[3];
 #ifdef DEBUG
          printf("MOUSE Z POSITION: %d [+%d]\n",mouse_Z_POSITION,data[3]);       
 #endif
       } else 
-      if ((uint8_t)data[3]>127 && (uint8_t)data[3]<256 ) { // -Y
+      if ((uint8_t)data[3]>127 && (uint8_t)data[3]<256 ) { // -Z
         mouse_Z_POSITION-=(256 - (uint8_t)data[3]);
 #ifdef DEBUG
          printf("MOUSE Z POSITION: %d [-%d]\n",mouse_Z_POSITION,(256-data[3]));       
